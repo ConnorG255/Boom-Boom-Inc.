@@ -1,7 +1,8 @@
-[gd_scene load_steps=11 format=3 uid="uid://bvbv1ctpkxc50"]
+[gd_scene load_steps=12 format=3 uid="uid://bvbv1ctpkxc50"]
 
 [ext_resource type="Texture2D" uid="uid://duhepywpxsifj" path="res://Assets/Sprites/house bg.png" id="1_aeb8a"]
 [ext_resource type="PackedScene" uid="uid://btg0o2whuvteb" path="res://Assets/Prefabs/Player.tscn" id="1_ensn3"]
+[ext_resource type="Script" path="res://startingscene.gd" id="1_qhxme"]
 [ext_resource type="PackedScene" uid="uid://dvsi3lr1ln5h4" path="res://Assets/Prefabs/window.tscn" id="3_oqo1d"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_8gk4o"]
@@ -57,6 +58,7 @@ size = Vector2(798, 20)
 size = Vector2(23, 146.25)
 
 [node name="Starting" type="Node2D"]
+script = ExtResource("1_qhxme")
 
 [node name="TileMap" type="TileMap" parent="."]
 texture_filter = 1
