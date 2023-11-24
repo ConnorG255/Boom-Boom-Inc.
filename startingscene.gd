@@ -1,6 +1,6 @@
 extends Node2D
 
-var thingsperlevel = 5.00
+var thingsperlevel = 39.00
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	Global.thingsLeft = thingsperlevel

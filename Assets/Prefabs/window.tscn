@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://dvsi3lr1ln5h4"]
 
+[ext_resource type="Script" path="res://Assets/scripts/window.gd" id="1_1kin6"]
 [ext_resource type="Texture2D" uid="uid://cg40orrclod2m" path="res://Assets/Sprites/winnormal.png" id="1_26dlt"]
-[ext_resource type="Script" path="res://Assets/Prefabs/window.gd" id="1_ngkqd"]
 [ext_resource type="Texture2D" uid="uid://bsser81cl5kqd" path="res://Assets/Sprites/winsad.png" id="2_7u6k3"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_72q7c"]
@@ -13,7 +13,7 @@ size = Vector2(32, 16)
 [node name="window" type="StaticBody2D" groups=["explode"]]
 collision_layer = 2
 collision_mask = 2
-script = ExtResource("1_ngkqd")
+script = ExtResource("1_1kin6")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(2, -1.5)
