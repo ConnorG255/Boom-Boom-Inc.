@@ -9,7 +9,7 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	print(str(Global.thingsLeft)+"/"+str(totalinlevel))
+	#print(str(Global.thingsLeft)+"/"+str(totalinlevel))
 	var percent = -((Global.thingsLeft-totalinlevel)/totalinlevel)*100
 	if percent == -0:
 		self.text =  "0%"

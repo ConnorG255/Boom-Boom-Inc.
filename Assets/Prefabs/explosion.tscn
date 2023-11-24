@@ -1,4 +1,6 @@
-[gd_scene load_steps=6 format=3 uid="uid://b8qj0n03ys4ky"]
+[gd_scene load_steps=7 format=3 uid="uid://b8qj0n03ys4ky"]
+
+[ext_resource type="Script" path="res://Assets/Prefabs/explosion.gd" id="1_ubwb4"]
 
 [sub_resource type="Gradient" id="Gradient_utx4e"]
 offsets = PackedFloat32Array(0.0634921, 0.621315, 0.759637, 1)
@@ -29,8 +31,12 @@ scale_curve = SubResource("CurveTexture_4eywa")
 color_ramp = SubResource("GradientTexture1D_sipwc")
 
 [node name="GPUParticles2D" type="GPUParticles2D"]
+light_mask = 7
+visibility_layer = 7
+position = Vector2(60, 72)
 emitting = false
-amount = 50
+amount = 100
 process_material = SubResource("ParticleProcessMaterial_ggm3g")
 one_shot = true
 explosiveness = 1.0
+script = ExtResource("1_ubwb4")
