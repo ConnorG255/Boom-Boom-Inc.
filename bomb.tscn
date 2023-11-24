@@ -10,7 +10,7 @@ radius = 6.0
 [sub_resource type="CircleShape2D" id="CircleShape2D_vh00c"]
 radius = 9.05539
 
-[node name="RigidBody2D" type="RigidBody2D"]
+[node name="RigidBody2D" type="RigidBody2D" groups=["explosive"]]
 collision_layer = 2
 collision_mask = 2
 gravity_scale = 0.1
