@@ -1,6 +1,6 @@
 extends Node2D
 
-var speed = 200
+var speed = 250
 var Bomba = preload("res://bomb.tscn")
 @onready var firepoint = $firepoint
 
