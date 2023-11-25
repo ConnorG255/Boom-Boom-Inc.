@@ -3,7 +3,7 @@ extends RigidBody2D
 @export var explosion : PackedScene
 @onready var bomb = $Bbomb
 @onready var sound = preload("res://Assets/Prefabs/explosionsound.tscn")
-@onready var radius = preload("res://Assets/Prefabs/")
+
 
 func _ready():
 	
@@ -12,7 +12,7 @@ func _ready():
 func _on_area_2d_body_entered(body):
 	
 	if body.is_in_group("explode"):
-		
+	
 		
 		var eparticle = explosion.instantiate();
 		eparticle.position = global_position;
