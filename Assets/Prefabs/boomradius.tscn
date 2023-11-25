@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://6dh0blq646a1"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_0tpc4"]
+radius = 42.0
+
+[node name="StaticBody2D" type="StaticBody2D"]
+
+[node name="big boom" type="CollisionShape2D" parent="."]
+light_mask = 3
+visibility_layer = 3
+position = Vector2(0, -5)
+rotation = 0.00292879
+shape = SubResource("CircleShape2D_0tpc4")
+disabled = true

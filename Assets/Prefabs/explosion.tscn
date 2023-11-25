@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://b8qj0n03ys4ky"]
 
-[ext_resource type="Script" path="res://Assets/Prefabs/explosion.gd" id="1_ubwb4"]
+[ext_resource type="Script" path="res://Assets/scripts/explosion.gd" id="1_jy024"]
 
 [sub_resource type="Gradient" id="Gradient_utx4e"]
 offsets = PackedFloat32Array(0.0634921, 0.621315, 0.759637, 1)
@@ -39,4 +39,4 @@ amount = 50
 process_material = SubResource("ParticleProcessMaterial_ggm3g")
 one_shot = true
 explosiveness = 1.0
-script = ExtResource("1_ubwb4")
+script = ExtResource("1_jy024")

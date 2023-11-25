@@ -1,0 +1,55 @@
+[gd_scene load_steps=7 format=3 uid="uid://br0rnxrbvc1bw"]
+
+[ext_resource type="Script" path="res://Bbomb.gd" id="1_17250"]
+[ext_resource type="Texture2D" uid="uid://bef5gi4es64wo" path="res://Assets/Sprites/bbomb.png" id="2_8a0mj"]
+[ext_resource type="PackedScene" uid="uid://b8qj0n03ys4ky" path="res://Assets/Prefabs/explosion.tscn" id="2_n61vg"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_fbrff"]
+radius = 42.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_d2e27"]
+size = Vector2(8, 18)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5pkt7"]
+size = Vector2(16, 22)
+
+[node name="RigidBody2D" type="RigidBody2D" groups=["explosive"]]
+rotation = 1.5708
+collision_layer = 2
+collision_mask = 2
+gravity_scale = 0.1
+script = ExtResource("1_17250")
+explosion = ExtResource("2_n61vg")
+
+[node name="big boom" type="CollisionShape2D" parent="."]
+light_mask = 3
+visibility_layer = 3
+position = Vector2(0, -5)
+rotation = 0.00292879
+shape = SubResource("CircleShape2D_fbrff")
+disabled = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+light_mask = 2
+visibility_layer = 2
+position = Vector2(-2.84217e-14, -3)
+shape = SubResource("RectangleShape2D_d2e27")
+
+[node name="Area2D" type="Area2D" parent="."]
+light_mask = 2
+visibility_layer = 2
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+light_mask = 2
+visibility_layer = 2
+position = Vector2(0, -3)
+shape = SubResource("RectangleShape2D_5pkt7")
+
+[node name="Bbomb" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(0, -2)
+texture = ExtResource("2_8a0mj")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

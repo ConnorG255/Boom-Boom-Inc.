@@ -5,6 +5,7 @@ extends CharacterBody2D
 var upodown = true
 var direction = 0
 func anim():
+	
 	if velocity != Vector2(0,0):
 		if upodown:
 			player.position.y += 0.5
