@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=3 uid="uid://bvbv1ctpkxc50"]
+[gd_scene load_steps=21 format=3 uid="uid://bvbv1ctpkxc50"]
 
 [ext_resource type="Texture2D" uid="uid://duhepywpxsifj" path="res://Assets/Sprites/house bg.png" id="1_aeb8a"]
 [ext_resource type="PackedScene" uid="uid://btg0o2whuvteb" path="res://Assets/Prefabs/Player.tscn" id="1_ensn3"]
@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://v4flxm5184ke" path="res://Assets/Prefabs/seat.tscn" id="6_ajj5n"]
 [ext_resource type="Texture2D" uid="uid://cbtqglrcc0l2d" path="res://Assets/Sprites/blank.png" id="6_xp40b"]
 [ext_resource type="PackedScene" uid="uid://bwo2ykrxonjuh" path="res://Assets/Prefabs/table.tscn" id="7_7c5w1"]
+[ext_resource type="Texture2D" uid="uid://dvevadjvkluxc" path="res://Assets/Sprites/arrom.png" id="9_pv6e0"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_8gk4o"]
 load_path = "res://.godot/imported/house bg.png-515b8c9945b706d9a76168f980b0a64a.ctex"
@@ -341,3 +342,9 @@ text = "blow everything
 up."
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="Arrom" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(-119, -138)
+rotation = 1.58609
+texture = ExtResource("9_pv6e0")
