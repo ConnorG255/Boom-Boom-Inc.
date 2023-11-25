@@ -1,0 +1,43 @@
+[gd_scene load_steps=6 format=3 uid="uid://bj2bxs6cujjop"]
+
+[ext_resource type="Script" path="res://Assets/scripts/destructibleitems.gd" id="1_7ow8g"]
+[ext_resource type="Texture2D" uid="uid://cs3rqiwdagef6" path="res://Assets/Sprites/birunormal.png" id="2_ugts3"]
+[ext_resource type="Texture2D" uid="uid://b5ax3jk5qtas4" path="res://Assets/Sprites/birusad.png" id="3_y0lpx"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ku6t0"]
+size = Vector2(63, 30)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1cp16"]
+size = Vector2(54, 24.5)
+
+[node name="buildings" type="StaticBody2D" node_paths=PackedStringArray("snormal", "ssad") groups=["explode"]]
+collision_layer = 3
+collision_mask = 3
+script = ExtResource("1_7ow8g")
+snormal = NodePath("Birunormal")
+ssad = NodePath("Birusad")
+
+[node name="Area2D" type="Area2D" parent="." groups=["explode"]]
+collision_layer = 3
+collision_mask = 3
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(1.5, 2)
+shape = SubResource("RectangleShape2D_ku6t0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1, -0.75)
+shape = SubResource("RectangleShape2D_1cp16")
+
+[node name="Birunormal" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(1, -20)
+texture = ExtResource("2_ugts3")
+
+[node name="Birusad" type="Sprite2D" parent="."]
+visible = false
+texture_filter = 1
+position = Vector2(1, -20)
+texture = ExtResource("3_y0lpx")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

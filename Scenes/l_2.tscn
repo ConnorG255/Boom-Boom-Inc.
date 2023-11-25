@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://btg0o2whuvteb" path="res://Assets/Prefabs/Player.tscn" id="1_nrbwj"]
 [ext_resource type="Texture2D" uid="uid://bfd53c8jmis3w" path="res://Assets/Sprites/outsidebg.png" id="1_vfows"]
-[ext_resource type="PackedScene" uid="uid://v4flxm5184ke" path="res://Assets/Prefabs/seat.tscn" id="3_rhetw"]
+[ext_resource type="PackedScene" uid="uid://bj2bxs6cujjop" path="res://Assets/Prefabs/buildings.tscn" id="3_5xkoa"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ghmjg"]
 texture = ExtResource("1_vfows")
@@ -35,6 +35,7 @@ layer_0/tile_data = PackedInt32Array(196605, 65536, 0, 196606, 65536, 0, 196607,
 
 [node name="Player" parent="." instance=ExtResource("1_nrbwj")]
 position = Vector2(2, -1)
+scale = Vector2(0.29, 0.29)
 
 [node name="borders" type="Node2D" parent="."]
 
@@ -43,13 +44,9 @@ collision_layer = 3
 collision_mask = 3
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="borders/StaticBody2D"]
-polygon = PackedVector2Array(243, -59, -291, -61, -291, 131, -291, 174, 416, 178, 551, 179, 551, 80, 584, 80, 586, 222, -354, 216, -359, -87, 604, -84, 592, -60, 590, -3, 551, -3, 549, -60)
+polygon = PackedVector2Array(243, -59, -319, -64, -319, 133, -319, 172, 416, 178, 551, 179, 551, 80, 584, 80, 586, 222, -354, 216, -359, -87, 604, -84, 592, -60, 590, -3, 551, -3, 549, -60)
 
-[node name="seat" parent="." instance=ExtResource("3_rhetw")]
-position = Vector2(-91, -5)
+[node name="objects" type="Node2D" parent="."]
 
-[node name="seat2" parent="." instance=ExtResource("3_rhetw")]
-position = Vector2(-68, -5)
-
-[node name="seat3" parent="." instance=ExtResource("3_rhetw")]
-position = Vector2(-46, -6)
+[node name="StaticBody2D" parent="." instance=ExtResource("3_5xkoa")]
+position = Vector2(-225, -43)

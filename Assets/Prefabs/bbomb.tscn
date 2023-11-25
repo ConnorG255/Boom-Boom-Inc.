@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://Bbomb.gd" id="1_17250"]
 [ext_resource type="Texture2D" uid="uid://bef5gi4es64wo" path="res://Assets/Sprites/bbomb.png" id="2_8a0mj"]
-[ext_resource type="PackedScene" uid="uid://b8qj0n03ys4ky" path="res://Assets/Prefabs/explosion.tscn" id="2_n61vg"]
+[ext_resource type="PackedScene" uid="uid://dbojv63c8r63m" path="res://Assets/Prefabs/bigexplosion.tscn" id="2_np0jy"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_fbrff"]
 radius = 42.0
@@ -11,7 +11,7 @@ radius = 42.0
 size = Vector2(41, 36)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5pkt7"]
-size = Vector2(16, 38)
+size = Vector2(41, 38)
 
 [node name="RigidBody2D" type="RigidBody2D" groups=["explosive"]]
 rotation = 1.5708
@@ -19,7 +19,7 @@ collision_layer = 2
 collision_mask = 2
 gravity_scale = 0.1
 script = ExtResource("1_17250")
-explosion = ExtResource("2_n61vg")
+explosion = ExtResource("2_np0jy")
 
 [node name="big boom" type="CollisionShape2D" parent="."]
 visible = false
@@ -45,7 +45,7 @@ collision_mask = 2
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 light_mask = 2
 visibility_layer = 2
-position = Vector2(-3.63798e-12, -11)
+position = Vector2(-0.500043, -11)
 shape = SubResource("RectangleShape2D_5pkt7")
 
 [node name="Bbomb" type="Sprite2D" parent="."]
