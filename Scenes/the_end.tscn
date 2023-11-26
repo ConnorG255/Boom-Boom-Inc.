@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://frcycyr4wltx"]
+[gd_scene load_steps=11 format=3 uid="uid://frcycyr4wltx"]
 
 [ext_resource type="Texture2D" uid="uid://duhepywpxsifj" path="res://Assets/Sprites/house bg.png" id="1_2ky6x"]
 [ext_resource type="Texture2D" uid="uid://go25f2rbuf3t" path="res://Assets/Sprites/spacebg.png" id="2_5kshd"]
@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://dvevadjvkluxc" path="res://Assets/Sprites/arrom.png" id="4_0ga5x"]
 [ext_resource type="PackedScene" uid="uid://deu4dcv5yxvc5" path="res://Assets/Prefabs/end.tscn" id="5_k5jus"]
 [ext_resource type="FontFile" uid="uid://cf1ap2v11pf1f" path="res://Assets/Sprites/joystix monospace.otf" id="5_xnhku"]
+[ext_resource type="Texture2D" uid="uid://p81qqsd2i1xg" path="res://Assets/Sprites/logo.png" id="7_vwu7f"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6b1s0"]
 texture = ExtResource("1_2ky6x")
@@ -85,6 +86,31 @@ anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
+[node name="theend" type="Label" parent="Control"]
+visible = false
+texture_filter = 1
+layout_mode = 0
+offset_left = 853.998
+offset_top = -47.0419
+offset_right = 1099.0
+offset_bottom = -21.0419
+theme_override_fonts/font = ExtResource("5_xnhku")
+text = "The end
+"
+horizontal_alignment = 1
+
+[node name="theend" type="Label" parent="Control/theend"]
+texture_filter = 1
+offset_left = 72.0007
+offset_top = 20.9964
+offset_right = 317.003
+offset_bottom = 46.9964
+scale = Vector2(0.405, 0.405)
+theme_override_fonts/font = ExtResource("5_xnhku")
+text = "(game crashed)
+"
+horizontal_alignment = 1
+
 [node name="Label5" type="Label" parent="Control"]
 texture_filter = 1
 layout_mode = 0
@@ -141,3 +167,9 @@ text = "You Still have one thing left
 [node name="end" parent="." instance=ExtResource("5_k5jus")]
 position = Vector2(1179, -72)
 scale = Vector2(3.05751, 2.70158)
+
+[node name="Logo" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(1183, -71.0581)
+scale = Vector2(8.44, 8.44)
+texture = ExtResource("7_vwu7f")

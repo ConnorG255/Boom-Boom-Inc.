@@ -11,14 +11,14 @@ config_version=5
 [application]
 
 config/name="Boom-boom"
-run/main_scene="res://starting.tscn"
+run/main_scene="res://Assets/Prefabs/starting.tscn"
 config/features=PackedStringArray("4.1", "Forward Plus")
 config/icon="res://icon.svg"
 
 [autoload]
 
 Global="*res://Assets/scripts/Global.gd"
-Startingscene="*res://startingscene.gd"
+Startingscene="*res://Assets/scripts/startingscene.gd"
 
 [importer_defaults]
 

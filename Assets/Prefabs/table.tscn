@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://bwo2ykrxonjuh"]
 
-[ext_resource type="Script" path="res://table.gd" id="1_vwtqc"]
+[ext_resource type="Script" path="res://Assets/scripts/table.gd" id="1_vwtqc"]
 [ext_resource type="Texture2D" uid="uid://duh2olh8j3547" path="res://Assets/Sprites/tablenormal.png" id="2_0n76f"]
 [ext_resource type="Texture2D" uid="uid://cou8t0thdyvgw" path="res://Assets/Sprites/tablesad.png" id="3_xm385"]
 

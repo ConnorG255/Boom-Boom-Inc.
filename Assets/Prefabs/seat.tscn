@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://v4flxm5184ke"]
 
-[ext_resource type="Script" path="res://seat.gd" id="1_g2a7e"]
+[ext_resource type="Script" path="res://Assets/scripts/seat.gd" id="1_g2a7e"]
 [ext_resource type="Texture2D" uid="uid://bs6chm3n1lsyw" path="res://Assets/Sprites/seatnormal.png" id="2_wgd1y"]
 [ext_resource type="Texture2D" uid="uid://frf0gssrl0j3" path="res://Assets/Sprites/seatsad.png" id="3_ptjpq"]
 

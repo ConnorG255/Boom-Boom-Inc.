@@ -8,10 +8,12 @@ var direction = 0
 func anim():
 	
 	if velocity != Vector2(0,0):
-		if get_tree().get_current_scene().get_name() == "za warudo" or get_tree().get_current_scene().get_name() == "The End"  and isplaying == false:
+		if get_tree().get_current_scene().get_name() == "The End"  and isplaying == false:
 			asdf.play()
 			isplaying = true
-		
+		if get_tree().get_current_scene().get_name() == "za warudo"  and isplaying == false:
+			asdf.play()
+			isplaying = true
 		if upodown:
 			player.position.y += 0.5
 			await(get_tree().create_timer(0.1).timeout)

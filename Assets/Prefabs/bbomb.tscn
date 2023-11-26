@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://br0rnxrbvc1bw"]
 
-[ext_resource type="Script" path="res://Bbomb.gd" id="1_17250"]
+[ext_resource type="Script" path="res://Assets/scripts/Bbomb.gd" id="1_17250"]
 [ext_resource type="Texture2D" uid="uid://bef5gi4es64wo" path="res://Assets/Sprites/bbomb.png" id="2_8a0mj"]
 [ext_resource type="PackedScene" uid="uid://dbojv63c8r63m" path="res://Assets/Prefabs/bigexplosion.tscn" id="2_np0jy"]
 

@@ -6,7 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://dxuswe2x1jsgy" path="res://Assets/Prefabs/the_world.tscn" id="3_jehia"]
 [ext_resource type="Texture2D" uid="uid://dvevadjvkluxc" path="res://Assets/Sprites/arrom.png" id="5_xnri6"]
 [ext_resource type="PackedScene" uid="uid://ddukttriqnxv" path="res://Assets/Prefabs/border.tscn" id="6_s7bb4"]
-[ext_resource type="Script" path="res://teleporter1.gd" id="7_5pcb4"]
+[ext_resource type="Script" path="res://Assets/scripts/teleporter1.gd" id="6_yv0iy"]
 [ext_resource type="Texture2D" uid="uid://dlvqqcygmd26x" path="res://Assets/Sprites/button.png" id="8_wvcur"]
 [ext_resource type="FontFile" uid="uid://cf1ap2v11pf1f" path="res://Assets/Sprites/joystix monospace.otf" id="9_2ny3p"]
 
@@ -85,7 +85,7 @@ texture = ExtResource("5_xnri6")
 z_index = 1
 position = Vector2(404, 57)
 scale = Vector2(4.54939, 6.16683)
-script = ExtResource("7_5pcb4")
+script = ExtResource("6_yv0iy")
 
 [node name="Blank" type="Sprite2D" parent="teleporter"]
 texture = ExtResource("1_myit0")
