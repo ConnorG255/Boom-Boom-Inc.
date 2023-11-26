@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://yyt6fovsmu5r"]
+[gd_scene load_steps=14 format=3 uid="uid://yyt6fovsmu5r"]
 
 [ext_resource type="Texture2D" uid="uid://cbtqglrcc0l2d" path="res://Assets/Sprites/blank.png" id="1_myit0"]
 [ext_resource type="Texture2D" uid="uid://go25f2rbuf3t" path="res://Assets/Sprites/spacebg.png" id="1_yq118"]
@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://ddukttriqnxv" path="res://Assets/Prefabs/border.tscn" id="6_s7bb4"]
 [ext_resource type="Script" path="res://teleporter1.gd" id="7_5pcb4"]
 [ext_resource type="Texture2D" uid="uid://dlvqqcygmd26x" path="res://Assets/Sprites/button.png" id="8_wvcur"]
+[ext_resource type="FontFile" uid="uid://cf1ap2v11pf1f" path="res://Assets/Sprites/joystix monospace.otf" id="9_2ny3p"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vqqih"]
 texture = ExtResource("1_yq118")
@@ -32,6 +33,16 @@ sources/0 = SubResource("TileSetAtlasSource_vqqih")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ay5sp"]
 size = Vector2(18, 16)
+
+[sub_resource type="Environment" id="Environment_mpsb5"]
+background_mode = 3
+tonemap_mode = 3
+glow_enabled = true
+glow_levels/1 = 1.0
+glow_levels/2 = 1.0
+glow_levels/4 = 1.0
+glow_levels/6 = 1.0
+glow_levels/7 = 1.0
 
 [node name="za warudo" type="Node2D"]
 
@@ -118,7 +129,11 @@ scale = Vector2(0.495, 0.495)
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("9_2ny3p")
 text = "PRESS E"
 horizontal_alignment = 1
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_mpsb5")
 
 [connection signal="body_entered" from="teleporter/Area2D" to="teleporter" method="_on_area_2d_body_entered"]

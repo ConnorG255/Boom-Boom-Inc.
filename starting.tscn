@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=3 uid="uid://bvbv1ctpkxc50"]
+[gd_scene load_steps=23 format=3 uid="uid://bvbv1ctpkxc50"]
 
 [ext_resource type="Texture2D" uid="uid://duhepywpxsifj" path="res://Assets/Sprites/house bg.png" id="1_aeb8a"]
 [ext_resource type="PackedScene" uid="uid://btg0o2whuvteb" path="res://Assets/Prefabs/Player.tscn" id="1_ensn3"]
@@ -10,6 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://bwo2ykrxonjuh" path="res://Assets/Prefabs/table.tscn" id="7_7c5w1"]
 [ext_resource type="Script" path="res://teleporter1.gd" id="8_c0lgs"]
 [ext_resource type="Texture2D" uid="uid://dvevadjvkluxc" path="res://Assets/Sprites/arrom.png" id="9_pv6e0"]
+[ext_resource type="FontFile" uid="uid://cf1ap2v11pf1f" path="res://Assets/Sprites/joystix monospace.otf" id="10_ys6u6"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_8gk4o"]
 load_path = "res://.godot/imported/house bg.png-515b8c9945b706d9a76168f980b0a64a.ctex"
@@ -300,10 +301,11 @@ scale = Vector2(0.66, 0.66)
 [node name="Label4" type="Label" parent="Control"]
 texture_filter = 1
 layout_mode = 0
-offset_left = 839.394
-offset_top = -239.394
-offset_right = 955.394
-offset_bottom = -187.394
+offset_left = 731.818
+offset_top = -228.788
+offset_right = 970.818
+offset_bottom = -176.788
+theme_override_fonts/font = ExtResource("10_ys6u6")
 text = "Gate Unlocks After
 Everything is Gone"
 horizontal_alignment = 1
@@ -316,6 +318,7 @@ offset_left = -156.0
 offset_top = 28.0
 offset_right = -58.0
 offset_bottom = 80.0
+theme_override_fonts/font = ExtResource("10_ys6u6")
 text = "PRESS W/A/S/D 
 TO MOVE"
 horizontal_alignment = 1
@@ -328,6 +331,7 @@ offset_left = -160.0
 offset_top = -29.0
 offset_right = -44.0
 offset_bottom = 23.0
+theme_override_fonts/font = ExtResource("10_ys6u6")
 text = "LMB TO THROW
 THE BOMBA"
 horizontal_alignment = 1
@@ -340,6 +344,7 @@ offset_left = -159.0
 offset_top = -99.0
 offset_right = -35.0
 offset_bottom = -47.0
+theme_override_fonts/font = ExtResource("10_ys6u6")
 text = "blow everything 
 up."
 horizontal_alignment = 1
