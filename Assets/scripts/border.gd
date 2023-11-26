@@ -1,6 +1,7 @@
 extends StaticBody2D
 
 func _process(delta):
-	if Global.thingsLeft == 0:
+	print(Global.thingsLeft)
+	if Global.thingsLeft <= 0:
 		queue_free()
 	pass

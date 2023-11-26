@@ -12,7 +12,12 @@ func _process(delta):
 
 
 func _on_area_2d_body_entered(body):
-	get_tree().change_scene_to_file("res://Scenes/l_2.tscn")
-	Startingscene.thingsperlevel = 5.00
-	Global.thingsLeft = 5.00
-	pass # Replace with function body.
+	if get_tree().get_current_scene().get_name() == "Starting":
+		get_tree().change_scene_to_file("res://Scenes/l_2.tscn")
+		Startingscene.thingsperlevel = 45.00
+		Global.thingsLeft = 45.00
+	elif get_tree().get_current_scene().get_name() == "L2":
+		get_tree().change_scene_to_file("res://Scenes/za_warudo.tscn")
+		Startingscene.thingsperlevel = 1.00
+		Global.thingsLeft = 1.00
+	

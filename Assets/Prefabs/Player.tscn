@@ -1,9 +1,10 @@
-[gd_scene load_steps=6 format=3 uid="uid://btg0o2whuvteb"]
+[gd_scene load_steps=7 format=3 uid="uid://btg0o2whuvteb"]
 
 [ext_resource type="Script" path="res://Assets/scripts/Player.gd" id="1_klqgk"]
 [ext_resource type="Texture2D" uid="uid://3xvt2alfww8s" path="res://Assets/Sprites/player.png" id="2_ho3pr"]
 [ext_resource type="PackedScene" uid="uid://dyujuhuotj6nh" path="res://Assets/Prefabs/bomb_weapon.tscn" id="3_0dkfy"]
 [ext_resource type="PackedScene" uid="uid://5bj6lgvavtey" path="res://ui.tscn" id="4_kffny"]
+[ext_resource type="Script" path="res://Assets/Prefabs/Camera2D.gd" id="5_6jm2c"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_cri7x"]
 size = Vector2(26, 60)
@@ -34,3 +35,4 @@ offset_bottom = 10.0
 zoom = Vector2(3.585, 3.585)
 position_smoothing_enabled = true
 position_smoothing_speed = 3.0
+script = ExtResource("5_6jm2c")

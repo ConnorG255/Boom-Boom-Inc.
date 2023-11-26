@@ -21,7 +21,7 @@ func _ready():
 	pass # Replace with function body.
 
 func fire():
-	if get_tree().get_current_scene().get_name() == "Starting":
+	if get_tree().get_current_scene().get_name() == "Starting" or get_tree().get_current_scene().get_name() == "The End":
 		var bomb = Bomba.instantiate()
 		bomb.position = firepoint.global_position
 		bomb.linear_velocity = Vector2(speed,0).rotated(rotation)
