@@ -11,7 +11,7 @@ var bBomba = preload("res://Assets/Prefabs/bbomb.tscn")
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	if get_tree().get_current_scene().get_name() == "Starting":
+	if get_tree().get_current_scene().get_name() == "Starting" or get_tree().get_current_scene().get_name() == "The End":
 		bbomarm.hide()
 	elif get_tree().get_current_scene().get_name() == "L2":
 		bombarm.hide()

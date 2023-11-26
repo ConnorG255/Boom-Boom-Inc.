@@ -3,7 +3,7 @@ extends Node2D
 @export var ssad : Sprite2D
 @export var explosion : PackedScene
 var exploded = false
-
+@onready var sound = preload("res://Assets/Prefabs/bigexplode.tscn")
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass # Replace with function body.
@@ -22,4 +22,9 @@ func _process(delta):
 		eparticle.rotation = global_rotation;
 		eparticle.emitting = true;
 		get_tree().current_scene.add_child(eparticle);
+		
+		var s = sound.instantiate();
+		s.position = global_position;
+		s.rotation = global_rotation;
+		get_tree().current_scene.add_child(s);
 	pass

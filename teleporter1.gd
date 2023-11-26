@@ -20,4 +20,9 @@ func _on_area_2d_body_entered(body):
 		get_tree().change_scene_to_file("res://Scenes/za_warudo.tscn")
 		Startingscene.thingsperlevel = 1.00
 		Global.thingsLeft = 1.00
+	elif get_tree().get_current_scene().get_name() == "za warudo":
+		get_tree().change_scene_to_file("res://Scenes/the_end.tscn")
+		Startingscene.thingsperlevel = 1.00
+		Global.thingsLeft = 1.00
+		
 	
