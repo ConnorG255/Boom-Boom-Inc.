@@ -3,7 +3,7 @@ Made as a part of [lame](https://itch.io/jam/lame-jam-34)https://itch.io/jam/lam
 Mainly to try using Godot particle effects in addition to actually getting a pollished game 
 
 ## Link to the game 
-[[](url)](https://retekant.itch.io/boom-boom-inc)
+https://retekant.itch.io/boom-boom-inc
 (3-7 min)
 
 ## Screenshots
