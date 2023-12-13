@@ -101,6 +101,7 @@ horizontal_alignment = 1
 
 [node name="theend" type="Label" parent="Control/theend"]
 texture_filter = 1
+layout_mode = 0
 offset_left = 72.0007
 offset_top = 20.9964
 offset_right = 317.003
